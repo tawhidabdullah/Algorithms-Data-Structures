@@ -1,0 +1,11 @@
+we use big o notation to rate our code , we already know that we many to ways to solve one problem in code ,
+how we will know which way is the best, here's where comes the big o notation.
+
+==>> which give us precise  vocabulary to talk about how our code performs 
+=>> It is usefull for discussing trade-offs between diffrents approaches 
+
+BIG O NOTATION allows us to formally talk about how the runtime of an algorithm grows as the input grows. 
+
+============================>>>>>>>>>>>>>>>>>>>>============///////////////////////////////////////
+
+BIG O DEFINITION ==>> 
