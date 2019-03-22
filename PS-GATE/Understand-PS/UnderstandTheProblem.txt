@@ -1,0 +1,13 @@
+//////////////// when i am about to solve a problem this question i should asked to myself /////////////////
+
+1. Can i restate the problem in my own words/way ?
+
+2. What are the input that go into the problem ?
+
+3. What are the outputs that should come from the solution for the problem ?
+
+4. Can the outputs be determined from the inputs ? 
+    in other words :> do i have enough information to solve the problem (i may not be able to answer the question
+    untill i start to solve the problem) but it's still worth to asked myself this question at this early stage.
+
+5. How should i label the important pieces of data that are part of problem ?

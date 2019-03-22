@@ -1,0 +1,12 @@
+//////////////////////      EXPLORE EXAMPLE    /////////////////////////////////////////////////////
+
+1. Start with simple example 
+2. Progress to more complex example 
+3. Explore example with empty values 
+4. Explore example with invalid values 
+
+
+
+
+
+

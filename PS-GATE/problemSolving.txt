@@ -1,0 +1,12 @@
+/////////////////////           PROBLEM SOLVING          ///////////////////////////////////////////
+
+SOME OF THE KEYS STEPS TO SOLVE A PROBLEM : =>>>>
+
+=: Understand the problem first 
+=: Explore concrete example 
+=: Break it down 
+=: Solve/Simplify
+=: Look back and improve 
+
+
+
