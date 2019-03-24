@@ -1,0 +1,9 @@
+//////////////////////////////////      SIMPLIFY        //////////////////////////////////////////////////
+
+1. FIND THE core difficulty in what you are tring to do 
+2. Temporarily ignore the difficulty
+3. Write a SIMPLIFied solution 
+4. Then invite than difficulty back in !
+
+
+
