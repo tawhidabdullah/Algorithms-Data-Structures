@@ -77,20 +77,66 @@ class singleyLinkedList {
       this.tail = null;
     }
     this.length--;
+    return currentHead;
+  }
+
+  get(index) {
+    if (index < 0 || index >= this.length) return null;
+    let currentNode = this.head;
+    let nodeCounter = 0;
+    while (index !== nodeCounter) {
+      currentNode = currentNode.next;
+      nodeCounter++;
+    }
+    return currentNode;
+  }
+
+  set(index, data) {
+    let nodeFound = this.get(index);
+    if (!nodeFound) return false;
+    nodeFound.val = data;
+    return true;
+  }
+  printList() {
+    const array = [];
+    let currentNode = this.head;
+    while (currentNode) {
+      array.push(currentNode.val);
+      currentNode = currentNode.next;
+    }
+    console.log(array);
+  }
+
+  reverse() {
+    let currentNode = this.head;
+    this.head = this.tail; // destiny
+    this.tail = currentNode; // Tawhid
+
+    // [ 'Tawhid', , 'destiny', 'maal' ]
+    // [ 'The Great Tawhid Abdullah','Tawhid' ] ==>   // we make the list backwards
+
+    // HELPER VARIABLES
+    let nexty = null;
+    let prev = null;
+
+    for (let i = 0; i < this.length; i++) {
+      nexty = currentNode.next;
+      currentNode.next = prev; // CurrentNode's next pointer will be the Previous Node ;
+      prev = currentNode; // Set previous to CurrentNode
+      currentNode = nexty; // In the next loop the currentNode will the the nexty
+    }
+
+    return this;
   }
 }
 
 const newList = new singleyLinkedList();
-// newList.push("Tawhid");
-// newList.push("The Great Tawhid Abdullah");
-// newList.push("Destiny");
-// newList.push("Abdullah");
-// newList.pop();
-// newList.pop();
-// newList.pop();
-// console.log(newList.pop());
-// console.log(newList);
+newList.push("Tawhid"); // ==>> /
+newList.push("The Great Tawhid Abdullah");
+newList.push("destiny");
+newList.push("maal");
 
-newList.ushift("The great Tawhid Abdullah");
-newList.shift();
-console.log(newList);
+newList.printList();
+newList.reverse();
+newList.printList();
+// console.log(newList);
