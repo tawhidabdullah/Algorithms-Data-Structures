@@ -51,15 +51,46 @@ class singleyLinkedList {
     }
     return currentNode;
   }
+
+  ushift(data) {
+    // create a new node
+    const newNode = new node(data);
+
+    if (!this.head) {
+      this.head = newNode;
+      this.tail = newNode;
+    } else {
+      let oldHead = this.head;
+      this.head = newNode; // Set newNode to new head
+      this.head.next = oldHead; // Set New Head's next pointer to oldHead
+    }
+    this.length++;
+    return this;
+  }
+
+  shift() {
+    if (!this.head) return undefined;
+    let currentHead = this.head;
+    let newHead = currentHead.next; // Set current Head Next pointer to newHead;
+    this.head = newHead;
+    if (this.length === 1) {
+      this.tail = null;
+    }
+    this.length--;
+  }
 }
 
 const newList = new singleyLinkedList();
-newList.push("Tawhid");
-newList.push("The Great Tawhid Abdullah");
-newList.push("Destiny");
-newList.push("Abdullah");
-newList.pop();
-newList.pop();
-newList.pop();
-console.log(newList.pop());
+// newList.push("Tawhid");
+// newList.push("The Great Tawhid Abdullah");
+// newList.push("Destiny");
+// newList.push("Abdullah");
+// newList.pop();
+// newList.pop();
+// newList.pop();
+// console.log(newList.pop());
+// console.log(newList);
+
+newList.ushift("The great Tawhid Abdullah");
+newList.shift();
 console.log(newList);
